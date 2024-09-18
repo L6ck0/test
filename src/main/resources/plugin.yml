@@ -1,0 +1,17 @@
+name: DeathTimeOut
+version: '1.0-SNAPSHOT'
+main: com.outlook.Lukas.VanImpe.Main
+api-version: '1.21'
+description: A plugin that tracks player kills, deaths, and playtime.
+commands:
+  stats:
+    description: "Displays your stats including kills, deaths, and playtime."
+    usage: "/<command>"
+  setplaytime:
+      description: "Set a player's playtime to a specified number of minutes."
+      usage: "/<command> <player> <playtime in minutes>"
+      permission: "death.timeout.setplaytime"
+  ban:
+    description: "Ban a player for a specified amount of time."
+    usage: "/<command> <player> <time in minutes>"
+    permission: "death.timeout.ban"
