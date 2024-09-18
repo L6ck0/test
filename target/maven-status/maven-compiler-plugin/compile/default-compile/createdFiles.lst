@@ -1,0 +1,9 @@
+com\outlook\Lukas\VanImpe\Utils\PlayerDataManager.class
+com\outlook\Lukas\VanImpe\Listeners\PlayerListener.class
+com\outlook\Lukas\VanImpe\Commands\SetPlayTimeCommand.class
+com\outlook\Lukas\VanImpe\Commands\BanCommand.class
+com\outlook\Lukas\VanImpe\Listeners\PlayerListener$1.class
+com\outlook\Lukas\VanImpe\Main$1.class
+com\outlook\Lukas\VanImpe\Commands\StatsCommand.class
+com\outlook\Lukas\VanImpe\Main.class
+com\outlook\Lukas\VanImpe\Utils\CustomConfig.class
