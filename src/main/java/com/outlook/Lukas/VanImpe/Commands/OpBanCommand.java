@@ -1,7 +1,7 @@
 package com.outlook.Lukas.VanImpe.Commands;
 
 import com.outlook.Lukas.VanImpe.Main;
-import com.outlook.Lukas.VanImpe.Utils.PlayerDataManager;
+import com.outlook.Lukas.VanImpe.Data.PlayerDataManager;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 import org.bukkit.command.Command;
@@ -11,11 +11,11 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class BanCommand implements CommandExecutor {
+public class OpBanCommand implements CommandExecutor {
 
     private final PlayerDataManager dataManager;
 
-    public BanCommand(Main plugin) {
+    public OpBanCommand(Main plugin) {
         this.dataManager = new PlayerDataManager(plugin.getPlayerDataConfig());
     }
 

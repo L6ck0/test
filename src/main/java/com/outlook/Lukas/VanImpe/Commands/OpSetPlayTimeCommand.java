@@ -1,7 +1,7 @@
 package com.outlook.Lukas.VanImpe.Commands;
 
 import com.outlook.Lukas.VanImpe.Main;
-import com.outlook.Lukas.VanImpe.Utils.PlayerDataManager;
+import com.outlook.Lukas.VanImpe.Data.PlayerDataManager;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -11,11 +11,11 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
-public class SetPlayTimeCommand implements CommandExecutor {
+public class OpSetPlayTimeCommand implements CommandExecutor {
 
     private final PlayerDataManager dataManager;
 
-    public SetPlayTimeCommand(Main plugin) {
+    public OpSetPlayTimeCommand(Main plugin) {
         this.dataManager = new PlayerDataManager(plugin.getPlayerDataConfig());
     }
 

@@ -1,7 +1,7 @@
 package com.outlook.Lukas.VanImpe.Listeners;
 
 import com.outlook.Lukas.VanImpe.Main;
-import com.outlook.Lukas.VanImpe.Utils.PlayerDataManager;
+import com.outlook.Lukas.VanImpe.Data.PlayerDataManager;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 import org.bukkit.entity.Player;

@@ -1,7 +1,7 @@
 package com.outlook.Lukas.VanImpe.Commands;
 
 import com.outlook.Lukas.VanImpe.Main;
-import com.outlook.Lukas.VanImpe.Utils.PlayerDataManager;
+import com.outlook.Lukas.VanImpe.Data.PlayerDataManager;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -10,11 +10,11 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
-public class StatsCommand implements CommandExecutor {
+public class SeeStatsCommand implements CommandExecutor {
 
     private final Main plugin;
 
-    public StatsCommand(Main plugin) {
+    public SeeStatsCommand(Main plugin) {
         this.plugin = plugin;
     }
 

@@ -1,5 +1,6 @@
-package com.outlook.Lukas.VanImpe.Utils;
+package com.outlook.Lukas.VanImpe.Data;
 
+import com.outlook.Lukas.VanImpe.Utils.CustomConfig;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import java.util.UUID;

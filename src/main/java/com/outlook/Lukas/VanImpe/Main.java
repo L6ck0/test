@@ -1,8 +1,8 @@
 package com.outlook.Lukas.VanImpe;
 
-import com.outlook.Lukas.VanImpe.Commands.BanCommand;
-import com.outlook.Lukas.VanImpe.Commands.SetPlayTimeCommand;
-import com.outlook.Lukas.VanImpe.Commands.StatsCommand;
+import com.outlook.Lukas.VanImpe.Commands.OpBanCommand;
+import com.outlook.Lukas.VanImpe.Commands.OpSetPlayTimeCommand;
+import com.outlook.Lukas.VanImpe.Commands.SeeStatsCommand;
 import com.outlook.Lukas.VanImpe.Listeners.PlayerListener;
 import com.outlook.Lukas.VanImpe.Utils.CustomConfig;
 import org.bukkit.command.PluginCommand;
@@ -43,14 +43,14 @@ public class Main extends JavaPlugin {
         // Register commands
         PluginCommand statsCommand = getCommand("stats");
         if (statsCommand != null) {
-            statsCommand.setExecutor(new StatsCommand(this));
+            statsCommand.setExecutor(new SeeStatsCommand(this));
         } else {
             getLogger().warning("Command 'stats' is not registered in plugin.yml");
         }
 
         PluginCommand banCommand = getCommand("ban");
         if (banCommand != null) {
-            banCommand.setExecutor(new BanCommand(this));
+            banCommand.setExecutor(new OpBanCommand(this));
         } else {
             getLogger().warning("Command 'ban' is not registered in plugin.yml");
         }
@@ -60,7 +60,7 @@ public class Main extends JavaPlugin {
 
         PluginCommand setPlaytimeCommand = getCommand("setplaytime");
         if (setPlaytimeCommand != null) {
-            setPlaytimeCommand.setExecutor(new SetPlayTimeCommand(this));
+            setPlaytimeCommand.setExecutor(new OpSetPlayTimeCommand(this));
         } else {
             getLogger().warning("Command 'setplaytime' is not registered in plugin.yml");
         }
